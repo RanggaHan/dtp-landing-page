@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <HeaderCarousel></HeaderCarousel>
+    <DonationImage1></DonationImage1>
+    <ImpactCounter></ImpactCounter>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderCarousel from './components/Carousel.vue';
+import DonationImage1 from './components/DonationImage1.vue'
+import ImpactCounter from './components/ImpactCounter.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HeaderCarousel,
+    DonationImage1,
+    ImpactCounter,
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 </style>
