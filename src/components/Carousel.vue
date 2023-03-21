@@ -11,6 +11,9 @@
         <p class="header-text1">Ulur Tangan di Bulan</p>
         <p class="header-text2">Ramadhan</p>
       </div>
+      <div class="orange-divider">
+        <img src="../assets/orange-vertical-line.png" />
+      </div>
       <div class="column2-header">
         <p class="header-text3">
           Untuk Ratusan Etnis Muslim Rohingya, yang Bertahan Hidup di Camp
@@ -39,7 +42,7 @@
 </template>
 
 <script>
-import Header from './Header.vue';
+import Header from "./Header.vue";
 
 export default {
   name: "HeaderCarousel",
@@ -131,7 +134,8 @@ body {
   color: #ffffff;
   font-weight: 700;
   font-size: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  /* white-space: nowrap; */
 }
 
 .header-text2 {
@@ -146,6 +150,10 @@ body {
   font-size: 28px;
   color: #ffffff;
   line-height: 1.5;
+}
+
+.orange-divider {
+  margin-right: 40px;
 }
 
 .slides {

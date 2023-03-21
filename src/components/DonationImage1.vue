@@ -5,14 +5,14 @@
         Terhitung sejak 4 bulan terakhir, ratusan pengungsi Rohingya berlabuh di
         aceh, Indonesia.
       </h2>
-      <p class="">
+      <p>
         Menjelang bulan ramadhan, mereka hidup serba terhimpit di camp
         pengungsian. Karenanya, bantuan yang turut kita salurkan, akan sangat
         berarti bagi mereka. Dalam bentuk makanan sahur dan berbuka, pakaian,
         air bersih dan lainnya. Jadikan bulan mulia sebagai kesempatan untuk
         menyemai amal sebanyak-banyaknya.
       </p>
-      <button class="help-button">Donasi Sekarang</button>
+      <button class="help-button">Bantu Sekarang</button>
     </div>
     <div class="images-container">
       <div class="image-column1">
@@ -33,8 +33,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 50px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 175px;
 }
 
@@ -43,17 +43,23 @@
 }
 
 .text-container h2{
-  font-size: 42px;
-  width: 80%;
+  font-size: 32px;
+  line-height: 48px;
+  width: 100%;
+  color: #2C3D7D;
 }
 
 .text-container p{
-  font-size: 26px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21.78px;
   text-align: justify;
+  width: 90%;
+  margin-top: 40px;
 }
 
 .help-button {
-  margin-top: 10px;
+  margin-top: 40px;
   padding: 15px 26px;
   border: none;
   border-radius: 10px;
@@ -85,6 +91,7 @@
   object-fit: cover;
   object-position: center;
   border-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .image-2 {
@@ -94,6 +101,7 @@
   object-position: center;
   margin-bottom: 30px;
   border-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .image-3 {
@@ -102,6 +110,7 @@
   object-fit: cover;
   object-position: center;
   border-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .donation-images__image {

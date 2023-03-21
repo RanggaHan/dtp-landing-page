@@ -6,7 +6,7 @@
     </div>
     <div class="button-container">
       <button class="button"><a href="https://dtpeduli.org/profil-lembaga" target="_blank">Tentang DT Peduli</a></button>
-      <button class="button"><a href="https://help.unhcr.org/indonesia/" target="_blank">Tentang UNHCR</a></button>
+      <button class="button"><a href="https://www.unhcr.org/id/" target="_blank">Tentang UNHCR</a></button>
       <button class="donation-button">Donasi Sekarang</button>
     </div>
   </div>
@@ -23,7 +23,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
