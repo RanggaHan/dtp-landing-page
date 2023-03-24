@@ -6,7 +6,52 @@
         <img :src="image" alt="Slide {{index+1}}" />
       </div>
     </div>
-    <div class="header-text-container">
+    <div v-if="currentIndex === 0" class="header-text-container">
+      <div class="column1-header">
+        <p class="header-text1">Ulur Tangan di Bulan</p>
+        <p class="header-text2">Ramadhan</p>
+      </div>
+      <div class="orange-divider">
+        <img src="../assets/orange-vertical-line.png" />
+      </div>
+      <div class="column2-header">
+        <p class="header-text3">
+          Untuk Ratusan Etnis Muslim Rohingya, yang Bertahan Hidup di Camp
+          Pengungsi
+        </p>
+      </div>
+    </div>
+    <div v-if="currentIndex === 0" class="header-text-container">
+      <div class="column1-header">
+        <p class="header-text1">Ulur Tangan di Bulan</p>
+        <p class="header-text2">Ramadhan</p>
+      </div>
+      <div class="orange-divider">
+        <img src="../assets/orange-vertical-line.png" />
+      </div>
+      <div class="column2-header">
+        <p class="header-text3">
+          Untuk Ratusan Etnis Muslim Rohingya, yang Bertahan Hidup di Camp
+          Pengungsi
+        </p>
+      </div>
+    </div>
+    <div v-if="currentIndex === 1" class="header-text-container">
+      <div class="column1-header">
+        <p class="header-text1-blue">Ulur Tangan di Bulan</p>
+        <p class="header-text2">Ramadhan</p>
+      </div>
+      <div class="orange-divider">
+        <img src="../assets/orange-vertical-line.png" />
+      </div>
+      <div class="column2-header">
+        <p class="header-text3-blue">
+          Untuk Ratusan Etnis Muslim Rohingya, yang Bertahan Hidup di Camp
+          Pengungsi
+        </p>
+      </div>
+    </div>
+    <div v-if="currentIndex === 2" class="header-text-container">
       <div class="column1-header">
         <p class="header-text1">Ulur Tangan di Bulan</p>
         <p class="header-text2">Ramadhan</p>
@@ -138,6 +183,14 @@ body {
   /* white-space: nowrap; */
 }
 
+.header-text1-blue {
+  color: #2C3D7D;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 10px;
+  /* white-space: nowrap; */
+}
+
 .header-text2 {
   color: #f5ad42;
   font-weight: 700;
@@ -149,6 +202,13 @@ body {
   font-weight: 400;
   font-size: 28px;
   color: #ffffff;
+  line-height: 1.5;
+}
+
+.header-text3-blue {
+  font-weight: 400;
+  font-size: 28px;
+  color: #2C3D7D;
   line-height: 1.5;
 }
 
