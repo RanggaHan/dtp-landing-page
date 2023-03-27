@@ -8,7 +8,7 @@
     </div>
     <div v-if="currentIndex === 0" class="header-text-container">
       <div class="column1-header">
-        <p class="header-text1">Ulur Tangan di Bulan</p>
+        <p class="header-text1">Ulur tangan di bulan</p>
         <p class="header-text2">Ramadhan</p>
       </div>
       <div class="orange-divider">
@@ -23,7 +23,7 @@
     </div>
     <div v-if="currentIndex === 0" class="header-text-container">
       <div class="column1-header">
-        <p class="header-text1">Ulur Tangan di Bulan</p>
+        <p class="header-text1">Ulur tangan di bulan</p>
         <p class="header-text2">Ramadhan</p>
       </div>
       <div class="orange-divider">
@@ -38,7 +38,7 @@
     </div>
     <div v-if="currentIndex === 1" class="header-text-container">
       <div class="column1-header">
-        <p class="header-text1-blue">Ulur Tangan di Bulan</p>
+        <p class="header-text1-blue">Ulur tangan di bulan</p>
         <p class="header-text2">Ramadhan</p>
       </div>
       <div class="orange-divider">
@@ -109,6 +109,7 @@ export default {
   mounted() {
     this.slideWidth = this.$el.querySelector(".slide").offsetWidth;
     window.addEventListener("resize", this.handleResize);
+    setInterval(this.nextSlide, 7800); // call nextSlide method every 5 seconds
   },
   beforeUnmount() {
     window.removeEventListener("resize", this.handleResize);

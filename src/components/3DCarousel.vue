@@ -1,12 +1,24 @@
 <template>
-  <div class="carousel-container">
-    <div class="carousel">
-      <div class="carousel-inner" :style="carouselStyle">
-        <div class="carousel-item" v-for="(item, index) in items" :key="index">
-          <img :src="item.src" :alt="item.alt" />
+  <div class="carousel-container-2">
+    <div class="controls-2">
+      <!-- <button class="circle-button left" @click="prevSlide">
+        <div class="triangle left"></div>
+      </button>
+      <button class="circle-button right" @click="nextSlide">
+        <div class="triangle right"></div>
+      </button> -->
+    </div>
+    <div class="carousel-2">
+      <div
+        class="slides-2"
+        :style="{ transform: `translateX(-${currentIndex * slideWidth}px)` }"
+      >
+        <div v-for="(story, index) in stories" :key="index" class="slide-2">
+          <img :src="story.image" class="slide-image-2" />
         </div>
       </div>
     </div>
+    <img class="blue-blob" src="../assets/icon/Blue-blob.svg">
   </div>
 </template>
 
@@ -14,103 +26,116 @@
 export default {
   data() {
     return {
-      items: [
-        { src: "/assets/IMG_3363.jpg", alt: "Image 1" },
-        { src: "/assets/IMG_3363.jpg", alt: "Image 2" },
-        { src: "/assets/IMG_3363.jpg", alt: "Image 3" },
-        { src: "/assets/IMG_3363.jpg", alt: "Image 4" },
-        { src: "/assets/IMG_3363.jpg", alt: "Image 5" },
+      currentIndex: 0,
+      slideWidth: 460, // adjust this to match your slide width
+      stories: [
+        {
+          image: require("@/assets/IMG_6633.jpg"),
+        },
+        {
+        
+          image: require("@/assets/IMG_6165.jpg"),
+        },
+        {
+          image: require("@/assets/IMG_6857.jpg"),
+        },
       ],
-      selectedIndex: 0,
-      animationInProgress: false,
     };
   },
   computed: {
-    carouselStyle() {
-      const angle = -90 * this.selectedIndex;
-      const translateZ = -150 * this.selectedIndex;
-      return {
-        transform: `perspective(1000px) rotateX(${angle}deg) translateZ(${translateZ}px)`,
-      };
+    title() {
+      return "Tentang cerita mereka";
     },
   },
+  mounted() {
+    setInterval(this.nextSlide, 5000); // call nextSlide method every 5 seconds
+  },
   methods: {
-    select(index) {
-      if (this.animationInProgress) {
-        return;
-      }
-      this.animationInProgress = true;
-      setTimeout(() => {
-        this.selectedIndex = index;
-        this.animationInProgress = false;
-      }, 1000);
+    prevSlide() {
+      this.currentIndex =
+        this.currentIndex === 0
+          ? this.stories.length - 1
+          : this.currentIndex - 1;
+    },
+    nextSlide() {
+      this.currentIndex =
+        this.currentIndex === this.stories.length - 1
+          ? 0
+          : this.currentIndex + 1;
     },
   },
 };
 </script>
 
-<style>
-.carousel-container {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-}
-
-.carousel {
+<style scoped>
+.carousel-container-2 {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
 }
-
-.carousel-inner {
-  display: flex;
+.carousel-2 {
+  height: 306px;
+  width: 450px;
+  margin: 0 100px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   position: relative;
-  transform-style: preserve-3d;
-  transition: transform 1s;
 }
-
-.carousel-item {
-  width: 200px;
-  height: 200px;
+.blue-blob {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotateY(0deg) translateZ(0);
-  transition: transform 1s;
-  opacity: 0.3;
+  top: -10px;
+  left: 120px;
+  z-index: -1;
+}
+.slides-2 {
+  width: 440px;
+  display: flex;
+  transition: transform 0.5s;
 }
 
-.carousel-item img {
-  width: 100%;
-  height: 100%;
+.slide-2 {
+  width: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image-2 {
+  width: 460px;
+  height: 306px;
   object-fit: cover;
+  margin-right: 20px;
+}
+.controls-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.circle-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2c3d7d;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
-.carousel-item.active {
-  opacity: 1;
-  transform: translate(-50%, -50%) rotateY(0deg) translateZ(0);
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white;
 }
 
-.carousel-item.active-1 {
-  opacity: 0.8;
-  transform: translate(-50%, -50%) rotateY(-20deg) translateZ(-150px);
+.left .triangle {
+  transform: rotate(0deg) translateX(70%);
 }
 
-.carousel-item.active-2 {
-  opacity: 0.6;
-  transform: translate(-50%, -50%) rotateY(-40deg) translateZ(-300px);
-}
-
-.carousel-item.active-3 {
-  opacity: 0.4;
-  transform: translate(-50%, -50%) rotateY(-60deg) translateZ(-450px);
-}
-
-.carousel-item.active-4 {
-  opacity: 0.2;
-  transform: translate(-50%, -50%) rotateY(-80deg) translateZ(-600px);
+.right .triangle {
+  transform: rotate(180deg) translateX(-100%);
 }
 </style>

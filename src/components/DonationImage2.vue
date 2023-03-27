@@ -42,7 +42,7 @@ export default {
 }
 
 .text-container {
-  width: 40%;
+  width: 50%;
   margin-left: 75px;
 }
 
