@@ -30,14 +30,17 @@ export default {
       slideWidth: 460, // adjust this to match your slide width
       stories: [
         {
-          image: require("@/assets/IMG_6633.jpg"),
+          image: require("@/assets/IMG_6129.jpg"),
         },
         {
         
-          image: require("@/assets/IMG_6165.jpg"),
+          image: require("@/assets/IMG_6131.jpg"),
         },
         {
-          image: require("@/assets/IMG_6857.jpg"),
+          image: require("@/assets/IMG_3268.jpg"),
+        },
+        {
+          image: require("@/assets/IMG_6155.jpg"),
         },
       ],
     };

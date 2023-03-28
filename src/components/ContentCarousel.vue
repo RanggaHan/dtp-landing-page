@@ -47,11 +47,11 @@ export default {
         },
         {
           text1: "Sahabat, saudara-saudara kita, Muslim Rohingya yang saat ini terdampar di negeri kita, mereka menunggu uluran tangan kita. Begitu banyak memori kelam yang dialami anak-anak disana, mereka yang kehilangan orangtuanya, seorang istri yang sudah berstatus janda, kepala keluarga yang seorang diri sebab anak istri direnggut paksa darinya.",
-          image: require("@/assets/IMG_6165.jpg"),
+          image: require("@/assets/IMG_6910.jpg"),
         },
         {
           text1: "Semoga bulan ramadhan tahun ini menggantikan seberkas memori kelam itu, dengan banyak keindahan yang merupakan buah dari kebaikan kita. Semoga ramadhan tahun ini kembali menyadarkan kita, bahwa barangkali dari segenap harta yang kita punya, ada hak oranglain dalam bagiannya.",
-          image: require("@/assets/IMG_6857.jpg"),
+          image: require("@/assets/IMG_6297.jpg"),
         },
       ],
     };
@@ -83,7 +83,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 500px;
+  margin-top: 250px;
 }
 
 .carousel-header-2 {

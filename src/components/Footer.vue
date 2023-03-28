@@ -26,13 +26,13 @@
           <h2>Sosial Media</h2>
           <div class="social-media-container">
             <div class="social-media">
-              <a href="facebook.com">
+              <a href="https://web.facebook.com/lazdtpeduli/?_rdc=1&_rdr" target="_blank">
                 <img src="../assets/logo/facebook-logo.svg" alt="facebook" />
               </a>
-              <a href="twitter.com">
+              <a href="https://twitter.com/dtpeduli?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
                 <img src="../assets/logo/twitter-logo.svg" alt="twitter" />
               </a>
-              <a href="youtube.com">
+              <a href="https://www.youtube.com/@DTPeduli/about" target="_blank">
                 <img src="../assets/logo/youtube-logo.svg" alt="youtube" />
               </a>
             </div>
@@ -58,7 +58,8 @@ export default {
 .footer {
   background-color: #2c3d7d;
   color: #fff;
-  padding: 30px 0;
+  padding-top: 50px;
+  padding-bottom: 80px;
   margin-top: 100px;
 }
 

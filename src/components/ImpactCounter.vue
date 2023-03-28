@@ -136,6 +136,7 @@ export default {
 .impact-counter {
   position: relative;
   margin-top: 175px;
+  padding-bottom: 100px;
 }
 .background-image {
   position: absolute;
@@ -180,7 +181,7 @@ export default {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  gap: 100px;
+  gap: 50px;
   align-content: flex-start;
   align-items: flex-start;
 }

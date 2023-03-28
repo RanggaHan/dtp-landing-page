@@ -11,24 +11,7 @@
         <p class="header-text1">Ulur tangan di bulan</p>
         <p class="header-text2">Ramadhan</p>
       </div>
-      <div class="orange-divider">
-        <img src="../assets/orange-vertical-line.png" />
-      </div>
-      <div class="column2-header">
-        <p class="header-text3">
-          Untuk Ratusan Etnis Muslim Rohingya, yang Bertahan Hidup di Camp
-          Pengungsi
-        </p>
-      </div>
-    </div>
-    <div v-if="currentIndex === 0" class="header-text-container">
-      <div class="column1-header">
-        <p class="header-text1">Ulur tangan di bulan</p>
-        <p class="header-text2">Ramadhan</p>
-      </div>
-      <div class="orange-divider">
-        <img src="../assets/orange-vertical-line.png" />
-      </div>
+      <div class="orange-line-2"></div>
       <div class="column2-header">
         <p class="header-text3">
           Untuk Ratusan Etnis Muslim Rohingya, yang Bertahan Hidup di Camp
@@ -41,9 +24,7 @@
         <p class="header-text1-blue">Ulur tangan di bulan</p>
         <p class="header-text2">Ramadhan</p>
       </div>
-      <div class="orange-divider">
-        <img src="../assets/orange-vertical-line.png" />
-      </div>
+      <div class="orange-line-2"></div>
       <div class="column2-header">
         <p class="header-text3-blue">
           Untuk Ratusan Etnis Muslim Rohingya, yang Bertahan Hidup di Camp
@@ -53,12 +34,10 @@
     </div>
     <div v-if="currentIndex === 2" class="header-text-container">
       <div class="column1-header">
-        <p class="header-text1">Ulur Tangan di Bulan</p>
+        <p class="header-text1">Ulur tangan di bulan</p>
         <p class="header-text2">Ramadhan</p>
       </div>
-      <div class="orange-divider">
-        <img src="../assets/orange-vertical-line.png" />
-      </div>
+      <div class="orange-line-2"></div>
       <div class="column2-header">
         <p class="header-text3">
           Untuk Ratusan Etnis Muslim Rohingya, yang Bertahan Hidup di Camp
@@ -161,7 +140,7 @@ body {
 
 .header-text-container {
   position: absolute;
-  top: 62%;
+  top: 75%;
   left: 50%;
   display: flex;
   flex-direction: row;
@@ -185,7 +164,7 @@ body {
 }
 
 .header-text1-blue {
-  color: #2C3D7D;
+  color: #2c3d7d;
   font-weight: 700;
   font-size: 48px;
   margin-bottom: 10px;
@@ -209,12 +188,19 @@ body {
 .header-text3-blue {
   font-weight: 400;
   font-size: 28px;
-  color: #2C3D7D;
+  color: #2c3d7d;
   line-height: 1.5;
 }
 
-.orange-divider {
-  margin-right: 40px;
+.orange-line-2 {
+  content: "";
+  margin-left: 0px;
+  margin-right: 50px;
+  margin-top: 0px;
+  bottom: 0;
+  width: 6px;
+  height: 120px;
+  background-color: #f5ad42;
 }
 
 .slides {

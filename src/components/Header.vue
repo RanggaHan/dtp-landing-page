@@ -7,7 +7,7 @@
     <div class="button-container">
       <button class="button"><a href="https://dtpeduli.org/profil-lembaga" target="_blank">Tentang DT Peduli</a></button>
       <button class="button"><a href="https://www.unhcr.org/id/" target="_blank">Tentang UNHCR</a></button>
-      <button class="donation-button">Donasi Sekarang</button>
+      <button class="donation-button"><a href="https://dtpeduli.org/ramadhan-bersama-rohingya" target="_blank">Donasi Sekarang</a></button>
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: fixed; */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -61,10 +61,17 @@ width: 160px;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
-  background-color: #2c3d7d;
+  background-color: transparent;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
+  transition: 0.3s; 
+}
+
+.button a {
+  margin-right: 0;
 }
 
 .donation-button {
@@ -74,20 +81,30 @@ width: 160px;
   border-radius: 5px;
   background-color: #E84F4F;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
+  transition: 0.3s; 
+}
+
+.donation-button a {
+  margin-right: 0;
 }
 
 .button:hover {
   background-color: #3e5baf;
+  transition: 0.3s; 
 }
 
 .donation-button:hover {
   background-color: #e9a3a3;
+  transition: 0.3s; 
 }
 
 a {
   text-decoration: none; /* remove underline */
   color: inherit; /* inherit the color from parent element */
 }
+
 </style>

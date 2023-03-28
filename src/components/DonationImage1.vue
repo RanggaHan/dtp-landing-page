@@ -12,7 +12,7 @@
         air bersih dan lainnya. Jadikan bulan mulia sebagai kesempatan untuk
         menyemai amal sebanyak-banyaknya.
       </p>
-      <button class="help-button">Bantu Sekarang</button>
+      <button class="help-button"><a href="https://dtpeduli.org/ramadhan-bersama-rohingya" target="_blank">Bantu Sekarang</a></button>
     </div>
     <div class="images-container">
       <div class="image-column1">
@@ -67,10 +67,16 @@
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.help-button a{
+  margin-right: 0;
 }
 
 .help-button:hover {
   background-color: #f4b75d;
+  transition: 0.3s;
 }
 
 .images-container {
