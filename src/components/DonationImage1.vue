@@ -26,20 +26,20 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .donation-images {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 175px;
 }
 
 .text-container {
-  width: 40%;
+  width: 60%;
+  margin-left: 0;
 }
 
 .text-container h2{
@@ -98,6 +98,8 @@
   object-position: center;
   border-radius: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: relative;
+  z-index: -100;
 }
 
 .image-2 {
@@ -108,6 +110,7 @@
   margin-bottom: 30px;
   border-radius: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: -100;
 }
 
 .image-3 {
@@ -117,6 +120,7 @@
   object-position: center;
   border-radius: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: -100;
 }
 
 .donation-images__image {

@@ -76,6 +76,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: -100;
 }
 .carousel-2 {
   height: 306px;

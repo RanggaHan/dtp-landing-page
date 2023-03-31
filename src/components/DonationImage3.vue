@@ -22,11 +22,13 @@
   align-items: center;
   justify-content: center;
   margin-top: 250px;
+  z-index: -100;
 }
 .image-wrapper {
   position: relative;
   width: 40%;
   height: 100%;
+  z-index: -100;
 }
 
 .image-wrapper img {

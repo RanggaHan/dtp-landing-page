@@ -137,6 +137,7 @@ export default {
   position: relative;
   margin-top: 175px;
   padding-bottom: 100px;
+  z-index: -1;
 }
 .background-image {
   position: absolute;

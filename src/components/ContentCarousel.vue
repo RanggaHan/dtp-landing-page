@@ -84,6 +84,7 @@ export default {
   flex-direction: column;
   align-items: center;
   margin-top: 250px;
+  z-index: -100;
 }
 
 .carousel-header-2 {
@@ -108,6 +109,7 @@ export default {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: -100;
 }
 
 .slides-2 {
@@ -128,11 +130,13 @@ export default {
   height: 498px;
   object-fit: cover;
   margin-right: 20px;
+  z-index: -100;
 }
 
 .slide-content-2 {
   flex: 1;
   width: 1278px;
+  z-index: -100;
 }
 .slide-content-2 p {
   text-align: justify;
@@ -141,6 +145,7 @@ export default {
   line-height: 21.78px;
   margin-right: 70px;
   margin-left: 60px;
+  z-index: -100;
 }
 
 .controls-2 {
@@ -156,6 +161,7 @@ export default {
   border: none;
   cursor: pointer;
   margin-right: 10px;
+  z-index: -1;
 }
 
 .triangle {
@@ -164,6 +170,9 @@ export default {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 10px solid white;
+  top: 0%;
+  z-index: -2;
+  position: relative;
 }
 
 .left .triangle {
