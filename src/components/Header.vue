@@ -102,6 +102,10 @@ export default {
   background-color: #3e5baf;
 }
 
+.button.scrolled:hover{
+  background-color: #6a84d3;
+}
+
 .button a {
   margin-right: 0;
 }

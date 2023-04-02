@@ -29,22 +29,18 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .donation-images {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 1278px;
   margin-top: 175px;
-  z-index: -100;
 }
 
 .text-container {
-  width: 50%;
-  margin-left: 75px;
+  margin-left: 175px;
 }
 
 .text-container h2 {

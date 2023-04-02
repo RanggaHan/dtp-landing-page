@@ -32,8 +32,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 200px;
+  margin-right: 200px; */
+  width: 1278px;
   margin-top: 175px;
 }
 
@@ -45,7 +46,7 @@
 .text-container h2{
   font-size: 32px;
   line-height: 48px;
-  width: 100%;
+  width: 90%;
   color: #2C3D7D;
 }
 

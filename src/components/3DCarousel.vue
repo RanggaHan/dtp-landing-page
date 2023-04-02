@@ -1,13 +1,5 @@
 <template>
   <div class="carousel-container-2">
-    <div class="controls-2">
-      <!-- <button class="circle-button left" @click="prevSlide">
-        <div class="triangle left"></div>
-      </button>
-      <button class="circle-button right" @click="nextSlide">
-        <div class="triangle right"></div>
-      </button> -->
-    </div>
     <div class="carousel-2">
       <div
         class="slides-2"
@@ -81,7 +73,7 @@ export default {
 .carousel-2 {
   height: 306px;
   width: 450px;
-  margin: 0 100px;
+  /* margin: 0 100px; */
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -89,8 +81,8 @@ export default {
 }
 .blue-blob {
   position: absolute;
-  top: -10px;
-  left: 120px;
+  top: -12px;
+  left: 0px;
   z-index: -1;
 }
 .slides-2 {

@@ -16,6 +16,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 150px;
+    width: 1278px;
+    height: 100%;
 }
 .partner-container h2 {
     font-size: 25px;

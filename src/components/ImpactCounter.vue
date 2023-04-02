@@ -132,11 +132,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .impact-counter {
   position: relative;
   margin-top: 175px;
   padding-bottom: 100px;
+  width: 100%;
+  height: 100%;
   z-index: -1;
 }
 .background-image {
