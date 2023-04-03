@@ -80,11 +80,13 @@ export default {
 
 <style scoped>
 .carousel-container-2 {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 250px;
-  z-index: -100;
+  z-index: 0;
 }
 
 .carousel-header-2 {
@@ -161,7 +163,7 @@ export default {
   border: none;
   cursor: pointer;
   margin-right: 10px;
-  z-index: -1;
+  z-index: 1000;
 }
 
 .triangle {

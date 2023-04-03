@@ -42,6 +42,7 @@ export default {
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
+  z-index: -2;
 }
 body {
   font-family: "Poppins", sans-serif;
