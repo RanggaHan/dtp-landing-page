@@ -86,6 +86,7 @@ export default {
   flex-direction: column;
   align-items: center;
   margin-top: 250px;
+  padding-bottom: 10px;
   z-index: 0;
 }
 
